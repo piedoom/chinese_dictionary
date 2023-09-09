@@ -93,7 +93,7 @@ mod chinese_dictionary;
 pub use self::chinese_dictionary::{
     classify, init, is_simplified, is_traditional, query, query_by_chinese, query_by_english,
     query_by_pinyin, query_by_simplified, query_by_traditional, simplified_to_traditional,
-    tokenize, traditional_to_simplified, ClassificationResult, MeasureWord, WordEntry,
+    tokenize, traditional_to_simplified, ClassificationResult, MeasureWord, WordEntry, DATA,
 };
 
 #[cfg(test)]

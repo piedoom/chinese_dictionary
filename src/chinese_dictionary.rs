@@ -17,7 +17,7 @@ static PINYIN: Lazy<Searchable> =
     Lazy::new(|| deserialize_from(&include_bytes!("../data/pinyin.dictionary")[..]).unwrap());
 static ENGLISH: Lazy<Searchable> =
     Lazy::new(|| deserialize_from(&include_bytes!("../data/english.dictionary")[..]).unwrap());
-static DATA: Lazy<HashMap<u32, WordEntry>> =
+pub static DATA: Lazy<HashMap<u32, WordEntry>> =
     Lazy::new(|| deserialize_from(&include_bytes!("../data/data.dictionary")[..]).unwrap());
 static ENGLISH_MAX_LENGTH: usize = 4;
 
